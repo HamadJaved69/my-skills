@@ -2,6 +2,7 @@
   "name": "my-skills",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hamadjaved69.github.io/my-skills",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -16,6 +17,8 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
