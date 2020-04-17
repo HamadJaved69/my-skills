@@ -1,10 +1,67 @@
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#root {
+  position:relative;
+  width:90vw;
+  height: 90vh;
+  margin: auto;
+}
+
+.container {
+  width: 500px;
+	max-width: 100%;
+  position:relative;
+  width:50vw;
+  height: 90vh;
+  margin: auto;
+}
+
+.element{
+  position:absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  height: 20px; /*requires explicit height*/
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
   color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+input {
+  width: 30%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #7fcd91;
+}
+
+ul {
+  line-height:2em;
+}
+
+li {
+  display: inline-block;
+  vertical-align: middle;  
+  margin: 5px;
+  background: #7fcd91;
+  color: #fff;
+  padding: 2px 6px 3px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+li:hover {
+  box-shadow: 0px 5px 5px rgba(127, 205, 145 , 0.4);
+  transform: translateY(-5px);
 }
